@@ -20,4 +20,9 @@ Data available:
 Data preparation:
 
 - The notebook to define the target is `v1_dataset.ipynb`. 
-- Based on this notebook, src/prepare_data.py combines the 3 datasets into a unique dataset called ´processed_data.parquet´. To execute , run `python3 -m src.prepare_data` with the environment activated.
+- Based on this notebook, src/prepare_data.py combines the 3 datasets into a unique dataset called `processed_data.parquet`. To execute , run `python3 -m src.prepare_data` with the environment activated.
+
+Feature engineering:
+
+- The notebook to define new features is `v3_feature_engineering.ipynb`.
+- Based on this notebook, src/feature_engineering.py transforms `processed_data.parquet` into `full_data.parquet`. To execute, run `python3 src/feature_engineering.py`
