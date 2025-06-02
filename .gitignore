@@ -2,3 +2,4 @@
 .env
 /.DS_Store
 /notebooks/.DS_Store
+src/__pycache__/

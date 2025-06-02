@@ -12,3 +12,12 @@ First steps:
 5. To use this environment as the kernel in notebooks `python -m ipykernel install --user --name=churn-prediction-zrive`
 
 
+
+Data available:
+- Add into /data folder: `zrive_advertiser_withdrawals.parquet` , `data/zrive_dim_advertiser.parquet` and `zrive_fct_monthly_snapshot_advertiser.parquet`
+
+
+Data preparation:
+
+- The notebook to define the target is `v1_dataset.ipynb`. 
+- Based on this notebook, src/prepare_data.py combines the 3 datasets into a unique dataset called ´processed_data.parquet´. To execute , run `python3 -m src.prepare_data` with the environment activated.
