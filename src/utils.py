@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 logger.addHandler(logging.StreamHandler())
 
-N_TRAINING_MONTHS = 6
+N_TRAINING_MONTHS = 7
 LAST_TRAINING_MONTH = datetime.datetime(2024, 11, 1)
 N_ESTIMATORS = 150
 
