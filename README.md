@@ -26,3 +26,16 @@ Feature engineering:
 
 - The notebook to define new features is `v3_feature_engineering.ipynb`.
 - Based on this notebook, src/feature_engineering.py transforms `processed_data.parquet` into `full_data.parquet`. To execute, run `python3 src/feature_engineering.py`
+
+Training:
+
+- The final notebook is train_boosting.ipynb. This notebook includes a rolling window validation schema. 
+Starting on 2023-03, train a model with 7 months, validation with following month.
+
+![validation_schema](images/validation_schema.png)
+
+![validation_schema2](images/validation_schema2.png)
+
+Repeat this proccess until the last month of data:
+
+![validation_schema3](images/validation_schema3.png)
