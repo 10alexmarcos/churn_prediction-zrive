@@ -4,6 +4,6 @@
 /notebooks/.DS_Store
 src/__pycache__/
 
-/images
+#/images
 
 /models
